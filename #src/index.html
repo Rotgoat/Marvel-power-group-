@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta class="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Marvel Power Group</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+	<div class="wrapper">
+		<main class="main" id="scrollspyHeading1">
+			<div class="lines">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+			@@include('_header.html',{})
+			<div class="main__content _container">
+				<h1 class="main__title">Marvel Power Group</h1>
+				<p class="main__text">Marvel Power Group is a boutique consulting firm with a fresh, markets-based
+					approach to value creation. We offer services to clients in energy, water, manufacturing and
+					transportation sectors.</p>
+				<a href="#scrollspyHeading4" class="main__button">
+					<span>Contact us</span>
+					<svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M6 2.14286L8.46323 0L14 0V10H8.46323L6 7.85714V2.14286Z" fill="black" />
+						<path d="M14 2H20V4H14V2Z" fill="black" />
+						<path d="M14 6H20V8H14V6Z" fill="black" />
+						<path d="M0 6L0 4H6V6H0Z" fill="black" />
+						<path d="M8 6.5V3.5L9.33333 2H12V8H9.33333L8 6.5Z" fill="#F9D023" />
+					</svg>
+				</a>
+			</div>
+			<div class="scroll-more">
+				Scroll for more
+			</div>
+			<nav id="navbar-example2" class="navbar-example2"
+				style="position: fixed;z-index: 5; right:0px;top: 50%;transform: translateY(-50%);">
+				<ul class="nav nav-pills">
+					<li class="nav-item">
+						<a class="nav-link active" href="#scrollspyHeading1"><span>01</span> Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#scrollspyHeading2"><span>02</span> About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#scrollspyHeading3"><span>03</span> Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#scrollspyHeading4"><span>04</span> Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</main>
+		<section class="about" data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0"
+			id="scrollspyHeading2">
+			<div class="lines">
+				<div class="line line-2"></div>
+				<div class="line line-2"></div>
+				<div class="line line-2"></div>
+				<div class="line line-2"></div>
+				<div class="line line-2"></div>
+			</div>
+			<div class="about__container _container">
+				<div class="about__body">
+					<h2 class="about__title section-title">
+						About Us
+					</h2>
+					<div class="about__content">
+						<div class="about__img _ibg">
+							<img src="img/aboutUs.jpg" alt="">
+						</div>
+						<div class="about__text">
+							<p class="about__para"> Our dynamic, solutions-oriented team brings decades
+								of relevant transactional, analytical and regulatory experience to supporting our
+								clients’
+								unique agendas.</p>
+							<p class="about__para">We are experienced practitioners who have run companies, successfully
+								originated and closed
+								complex deals, advocated and negotiated favorable policy and advanced technological
+								innovation and climate leadership.</p>
+							<p class="about__para"></p>We specialize in structuring balanced solutions for all affected
+							stakeholders and uncovering
+							economic opportunities in otherwise opaque environments.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="services" data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0"
+			id="scrollspyHeading3">
+			<div class="lines">
+				<div class="line line-2"></div>
+				<div class="line line-2"></div>
+				<div class="line line-2"></div>
+				<div class="line line-2"></div>
+				<div class="line line-2"></div>
+			</div>
+			<div class="services__container _container">
+				<div class="services__body">
+					<h2 class="services__title section-title">
+						Services
+					</h2>
+					<p class="services__info">
+						Our clients are at the forefront of energy transition and innovation. Their task is complex:
+						balance reliability and cost effectiveness with new customer demands, investment decisions,
+						decarbonization goals and an evolving menu of new technologies. We understand the task and bring
+						deep expertise
+						to addressing these challenges.
+					</p>
+					<div class="services__items">
+						<div class="services__item">
+							<div class="item__title">
+								Enterprise<br>Strategy
+							</div>
+							<ul class="item__list">
+								<li class="item__item">
+									Procurement and investment diligence
+								</li>
+								<li class="item__item">
+									Customer engagement and retention
+								</li>
+								<li class="item__item">
+									Renewable, DER, and EV program structuring
+								</li>
+								<li class="item__item">
+									Reliability planning and reporting
+								</li>
+								<li class="item__item arrow-right">
+									<a href="#">
+										<svg width="45" height="12" viewBox="0 0 45 12" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<rect y="5" width="33" height="2" fill="white" />
+											<path d="M38 1L43 6L38 11" stroke="white" stroke-width="2" />
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="services__item">
+							<div class="item__title">
+								Wholesale<br>Power
+							</div>
+							<ul class="item__list">
+								<li class="item__item">
+									Commodity advisory and RFPs
+								</li>
+								<li class="item__item">
+									Energy, capacity, REC, RIN, and LCFS placement
+								</li>
+								<li class="item__item">
+									Enterprise PPA structuring
+								</li>
+								<li class="item__item">
+									Contract extensions and re-packaging
+								</li>
+								<li class="item__item arrow-right">
+									<a href="#">
+										<svg width="45" height="12" viewBox="0 0 45 12" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<rect y="5" width="33" height="2" fill="white" />
+											<path d="M38 1L43 6L38 11" stroke="white" stroke-width="2" />
+										</svg>
+									</a>
+
+								</li>
+							</ul>
+						</div>
+
+						<div class="services__item">
+							<div class="item__title">
+								Market<br>Development
+							</div>
+							<ul class="item__list">
+								<li class="item__item">
+									New venture setup
+								</li>
+								<li class="item__item">
+									Demand planning and acquisition
+								</li>
+								<li class="item__item">
+									Project development and regulatory support
+								</li>
+								<li class="item__item">
+									Partnership structuring
+								</li>
+								<li class="item__item arrow-right">
+									<a href="#">
+										<svg width="45" height="12" viewBox="0 0 45 12" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<rect y="5" width="33" height="2" fill="white" />
+											<path d="M38 1L43 6L38 11" stroke="white" stroke-width="2" />
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<p class="services__info">
+						Our clients are time constrained and under-resourced. Agendas shift, budgets move and priorities
+						change. We understand. We are agile, creative and immediately responsive to your various working
+						styles, governance requirements and evolving needs.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact" data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0" tabindex="0"
+			id="scrollspyHeading4">
+			<div class="lines">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+			<div class="contact__container _container">
+				<div class="contact__body">
+					<div class="contact__contact">
+						<h2 class="contact__title section-title">
+							Contact
+						</h2>
+						<div class="contact__email">
+							Email us here: <br>
+							<a href="mailto:info@marvelpowergroup.com">info@marvelpowergroup.com</a>
+						</div>
+					</div>
+					<div class="contact__form">
+						<h3 class="form__title">
+							Stay in the loop<br>
+							by getting on<br>
+							our mailing list
+						</h3>
+						<form action="#">
+							<div class="form__name">
+								<input id="name" type="text" placeholder="Name*" autocomplete="off">
+							</div>
+							<div class="form__name">
+								<input id="email" type="email" placeholder="E-mail*" autocomplete="off">
+							</div>
+							<button type="submit" class="btn-submit main__button">
+								<span>send</span>
+								<svg width="20" height="10" viewBox="0 0 20 10" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M6 2.14286L8.46323 0L14 0V10H8.46323L6 7.85714V2.14286Z" fill="black" />
+									<path d="M14 2H20V4H14V2Z" fill="black" />
+									<path d="M14 6H20V8H14V6Z" fill="black" />
+									<path d="M0 6L0 4H6V6H0Z" fill="black" />
+									<path d="M8 6.5V3.5L9.33333 2H12V8H9.33333L8 6.5Z" fill="#F9D023" />
+								</svg>
+							</button>
+						</form>
+					</div>
+					<div class="contact__thanks">
+						<h3 class="form__title">
+							Thank you.<br>
+							Your info has been<br>
+							successfully sent
+						</h3>
+						<a href="">
+							Your can contact us <span>info@marvelpowergroup.com</span><br>
+							if you need additional assistance
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--@@include('_footer.html',{})-->
+	</div>
+	<!--@@include('_popup.html',{})-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+		crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

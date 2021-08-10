@@ -1,0 +1,118 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+	@font-face {
+		font-family: $font_name;
+		font-display: swap;
+		src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+		font-weight: #{$weight};
+		font-style: #{$style};
+	}
+}
+@import "mixins.scss";
+@import "fonts.scss";
+/*@import "icons.scss";*/
+
+$fontFamily: "SofiaPro";
+$fontSize: 18px;
+$mainColor: #000;
+$darkTextColor: #0b0d21;
+$yellowColor: #f6d330;
+$orangeColor: orange;
+$dirtySnowColor: #f0f0f0;
+$whiteColor: #ffffff;
+
+//$minWidth: 320px;
+//$maxWidth: 1920px;
+$maxWidthContainer: 1140;
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+@import "nullstyle.scss";
+body {
+	color: $mainColor;
+	background: #f2f2f2;
+	font-weight: 300;
+	position: relative;
+	&._lock {
+		overflow: hidden;
+	}
+}
+.wrapper {
+	width: 100%;
+
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+._container {
+	max-width: $maxWidthContainer + px;
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+
+@import "header.scss";
+@import "main.scss";
+@import "about.scss";
+@import "services.scss";
+@import "contact.scss";
+
+.nav.nav-pills {
+	@media (max-width: 1475px) {
+		display: none;
+	}
+	flex-direction: column;
+	.nav-item {
+		margin: 20px 0px;
+		padding-right: 20px;
+
+		.nav-link {
+			padding: 0;
+			color: transparent;
+			&:hover {
+				span {
+					color: navy;
+				}
+			}
+			span {
+				font-size: 12px;
+				display: inline-block;
+				color: transparent;
+				text-shadow: 0px 0px 1px gray;
+				position: relative;
+				left: 35px;
+			}
+			left: -35px;
+			display: block;
+			position: relative;
+			padding-right: 0px;
+			&::before {
+				transition: all 0.3s ease 0s;
+				right: -34px;
+				top: 10px;
+				width: 15px;
+				height: 1px;
+				content: "";
+				background-color: gray;
+				position: absolute;
+			}
+			&.active {
+				color: navy;
+				background: transparent;
+				margin-left: -35px !important;
+				transition: all 0.3s ease 0s;
+				span {
+					text-shadow: 0px 0px 1px navy;
+					left: 0;
+				}
+
+				&::before {
+					width: 35px;
+					background-color: navy;
+				}
+			}
+		}
+	}
+}

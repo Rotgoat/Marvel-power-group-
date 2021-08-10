@@ -1,0 +1,168 @@
+.contact {
+	position: relative;
+
+	background-color: $mainColor;
+	&__container {
+		position: relative;
+		z-index: 4;
+		padding: 203px 15px 400px 15px;
+
+		@media (max-width: $md3+px) {
+			padding-bottom: 143px;
+			padding-top: 63px;
+		}
+	}
+
+	// .contact__body
+
+	&__body {
+		display: flex;
+
+		@media (max-width: 1023.98px) {
+			flex-direction: column;
+		}
+	}
+
+	// .contact__contact
+
+	&__contact {
+		color: $whiteColor;
+		margin-right: 111px;
+
+		@media (max-width: 1023.98px) {
+			margin-bottom: 40px;
+			margin-right: 0;
+		}
+		@media (max-width: $md3+px) {
+			margin-bottom: 15px;
+		}
+	}
+
+	// .contact__title
+
+	&__title {
+		color: inherit;
+
+		position: relative;
+		&::after {
+			left: 0;
+			bottom: -50px;
+			width: 100px;
+			height: 6px;
+			content: "";
+			background-color: $yellowColor;
+			position: absolute;
+
+			@media (max-width: $md3+px) {
+				bottom: -28px;
+			}
+		}
+	}
+
+	// .contact__email
+
+	&__email {
+		padding-top: 71px;
+		font-weight: 900;
+		font-size: 40px;
+		line-height: 105%;
+		color: #ffffff;
+		@media (max-width: $md3+px) {
+			font-size: 24px;
+		}
+
+		a {
+			color: $yellowColor;
+			word-break: break-all;
+		}
+	}
+
+	// .contact__form
+
+	&__form {
+		flex: 1 0 auto;
+		padding-top: 50px;
+		@media (max-width: 1024px) {
+			max-width: 100%;
+		}
+	}
+}
+
+.form {
+	// .form__title
+
+	&__title {
+		color: $whiteColor;
+		font-weight: 900;
+		font-size: 40px;
+		line-height: 105%;
+		margin-bottom: 35px;
+		@media (max-width: $md3+px) {
+			font-size: 24px;
+		}
+	}
+
+	// .form__name
+
+	&__name {
+		max-width: 445px;
+		width: 100%;
+		flex: 1 0 445px;
+		position: relative;
+		@media (max-width: 1024px) {
+			max-width: 100%;
+		}
+		&:focus-within {
+			::placeholder {
+				font-size: 10px;
+				top: 3px;
+			}
+		}
+		input {
+			width: 100%;
+			padding: 15px;
+			margin-bottom: 20px;
+			font-family: inherit;
+		}
+		::placeholder {
+			color: $mainColor;
+			position: absolute;
+			font-family: inherit;
+
+			left: 15px;
+			top: 15px;
+			transition: 0.1s linear all;
+		}
+	}
+}
+.btn-submit {
+	width: 272px;
+	float: right;
+	@media (max-width: $md3+px) {
+		width: 196px;
+	}
+}
+.main {
+	// .main__button
+
+	&__button {
+	}
+}
+
+.contact {
+	// .contact__thanks
+	&__thanks {
+		display: none;
+
+		a {
+			font-weight: 300;
+			text-decoration: underline;
+			font-size: 18px;
+			line-height: 26px;
+			color: $whiteColor;
+			span {
+				color: $yellowColor;
+			}
+		}
+	}
+}

@@ -1,0 +1,6 @@
+@mixin fontSizeBase {
+    font-size: $fontSize;
+}
+@mixin fontFamilyBase {
+    font-family: $fontFamily;
+}
